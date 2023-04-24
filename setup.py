@@ -1,10 +1,9 @@
-
 from setuptools import setup, find_packages
 from typing import List
 
 PROJECT_NAME = "Machine Learning Project"
 VERSION = "0.0.1"
-AUTHOR = "rizwan"
+AUTHOR = "Shivan Kumar"
 DESRCIPTION = "This is our machine learning pipeline building sesstion"
 HYPHEN_E_DOT = "-e ."
 REQUIREMENT_FILE_NAME = "requirements.txt"
@@ -16,7 +15,6 @@ def get_requirements_list()->List[str]:
         if HYPHEN_E_DOT in requirement_list:
             requirement_list.remove(HYPHEN_E_DOT)
         return requirement_list
-
 
 
 setup(

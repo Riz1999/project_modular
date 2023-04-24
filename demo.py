@@ -3,9 +3,10 @@ from visa.logger import logging
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return "hello worlds"
+    logging.info("We are thesting our logging file")
+    return "Hello worlds"
 
-if __name__ == '__main__':
+if __name__=="__main__":
     app.run(debug=True)
