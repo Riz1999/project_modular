@@ -5,7 +5,7 @@ from visa.exception import CustomException
 from visa.entity.config_entity import *
 from visa.utils.utils import read_yaml_file
 
-class Configuartion:
+class Configuration:
 
     def __init__(self,
         config_file_path:str =CONFIG_FILE_PATH,
