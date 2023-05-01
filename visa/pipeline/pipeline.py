@@ -10,12 +10,12 @@ from visa.components.data_validation import DataValidation
 from visa.exception import CustomException
 from datetime import date
 from collections import namedtuple
-from visa.config.configuration import Configuartion
+from visa.config.configuration import Configuration
 from visa.components.data_ingestion import DataIngestion
 
 
 class Pipeline():
-    def __init__(self, config: Configuartion = Configuartion())->None:
+    def __init__(self, config: Configuration = Configuration())->None:
         try:
             self.config = config
         except Exception as e:
